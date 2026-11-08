@@ -98,7 +98,7 @@ footer{margin-top:48px;border-top:1px solid var(--border);padding-top:12px;color
 <dl class="meta">
 <div><dt>请求日期</dt><dd>2026-11-06</dd></div>
 <div><dt>实际交易日</dt><dd>2026-11-06</dd></div>
-<div><dt>生成时间</dt><dd>2026-11-08 12:09:11</dd></div>
+<div><dt>生成时间</dt><dd>2026-11-08 12:12:05</dd></div>
 <div><dt>参与排名</dt><dd>3559 只</dd></div>
 <div><dt>最终名单</dt><dd>20 只（同行业 ≤3 只）</dd></div>
 <div><dt>数据源</dt><dd>magicFormulaData.db（SQLite）</dd></div>
@@ -398,90 +398,30 @@ footer{margin-top:48px;border-top:1px solid var(--border);padding-top:12px;color
 </section>
 <section id="detail_payout">
 <h2>八、股息支付率</h2>
-<p class="note">近 5 年 DIVIDEND_PAY_IMPLE（股息支付率，%）；预期股息率里用的"平均股利支付率"就取自这张表</p>
+<p class="note">一只股票一行（报告年度:支付率），5 年年报口径 DIVIDEND_PAY_IMPLE；均值只统计 0~200% 的年份（与"预期股息率"用的平均股利支付率口径一致），越界年份标 * 且不计入均值；预期股息率 = EPS 预测 x 该均值/100 / 收盘价</p>
 <div class="tablebox"><table>
-<thead><tr><th class="num">排名</th><th class="">股票代码</th><th class="">股票名称</th><th class="">报告期</th><th class="num">股息支付率</th></tr></thead>
+<thead><tr><th class="num">排名</th><th class="">股票代码</th><th class="">股票名称</th><th class="">近5年年报股息支付率(%)</th><th class="num">均值(%)</th><th class="num">有效年数</th></tr></thead>
 <tbody>
-<tr><td class="num">1</td><td>sh.600502</td><td>安徽建工</td><td>2025-12-31</td><td class="num">30.38%</td></tr>
-<tr><td class="num">1</td><td>sh.600502</td><td>安徽建工</td><td>2024-12-31</td><td class="num">34.46%</td></tr>
-<tr><td class="num">1</td><td>sh.600502</td><td>安徽建工</td><td>2023-12-31</td><td class="num">28.73%</td></tr>
-<tr><td class="num">1</td><td>sh.600502</td><td>安徽建工</td><td>2022-12-31</td><td class="num">31.10%</td></tr>
-<tr><td class="num">2</td><td>sh.601229</td><td>上海银行</td><td>2025-12-31</td><td class="num">30.54%</td></tr>
-<tr><td class="num">2</td><td>sh.601229</td><td>上海银行</td><td>2024-12-31</td><td class="num">30.15%</td></tr>
-<tr><td class="num">2</td><td>sh.601229</td><td>上海银行</td><td>2023-12-31</td><td class="num">28.99%</td></tr>
-<tr><td class="num">2</td><td>sh.601229</td><td>上海银行</td><td>2022-12-31</td><td class="num">25.51%</td></tr>
-<tr><td class="num">3</td><td>sh.600015</td><td>华夏银行</td><td>2025-12-31</td><td class="num">24.57%</td></tr>
-<tr><td class="num">3</td><td>sh.600015</td><td>华夏银行</td><td>2024-12-31</td><td class="num">23.29%</td></tr>
-<tr><td class="num">3</td><td>sh.600015</td><td>华夏银行</td><td>2023-12-31</td><td class="num">23.18%</td></tr>
-<tr><td class="num">3</td><td>sh.600015</td><td>华夏银行</td><td>2022-12-31</td><td class="num">24.35%</td></tr>
-<tr><td class="num">4</td><td>sh.601166</td><td>兴业银行</td><td>2025-12-31</td><td class="num">29.12%</td></tr>
-<tr><td class="num">4</td><td>sh.601166</td><td>兴业银行</td><td>2024-12-31</td><td class="num">29.06%</td></tr>
-<tr><td class="num">4</td><td>sh.601166</td><td>兴业银行</td><td>2023-12-31</td><td class="num">28.02%</td></tr>
-<tr><td class="num">4</td><td>sh.601166</td><td>兴业银行</td><td>2022-12-31</td><td class="num">27.01%</td></tr>
-<tr><td class="num">7</td><td>sh.600894</td><td>广日股份</td><td>2025-12-31</td><td class="num">61.78%</td></tr>
-<tr><td class="num">7</td><td>sh.600894</td><td>广日股份</td><td>2024-12-31</td><td class="num">143.59%</td></tr>
-<tr><td class="num">7</td><td>sh.600894</td><td>广日股份</td><td>2023-12-31</td><td class="num">60.97%</td></tr>
-<tr><td class="num">7</td><td>sh.600894</td><td>广日股份</td><td>2022-12-31</td><td class="num">30.20%</td></tr>
-<tr><td class="num">8</td><td>sz.002582</td><td>好想你</td><td>2025-12-31</td><td class="num">30.56%</td></tr>
-<tr><td class="num">8</td><td>sz.002582</td><td>好想你</td><td>2024-12-31</td><td class="num">-849.55%</td></tr>
-<tr><td class="num">8</td><td>sz.002582</td><td>好想你</td><td>2023-12-31</td><td class="num">-510.72%</td></tr>
-<tr><td class="num">8</td><td>sz.002582</td><td>好想你</td><td>2022-12-31</td><td class="num">-23.40%</td></tr>
-<tr><td class="num">9</td><td>sh.601668</td><td>中国建筑</td><td>2025-12-31</td><td class="num">28.75%</td></tr>
-<tr><td class="num">9</td><td>sh.601668</td><td>中国建筑</td><td>2024-12-31</td><td class="num">24.29%</td></tr>
-<tr><td class="num">9</td><td>sh.601668</td><td>中国建筑</td><td>2023-12-31</td><td class="num">20.82%</td></tr>
-<tr><td class="num">9</td><td>sh.601668</td><td>中国建筑</td><td>2022-12-31</td><td class="num">20.80%</td></tr>
-<tr><td class="num">11</td><td>sh.600741</td><td>华域汽车</td><td>2025-12-31</td><td class="num">43.74%</td></tr>
-<tr><td class="num">11</td><td>sh.600741</td><td>华域汽车</td><td>2024-12-31</td><td class="num">37.62%</td></tr>
-<tr><td class="num">11</td><td>sh.600741</td><td>华域汽车</td><td>2023-12-31</td><td class="num">32.78%</td></tr>
-<tr><td class="num">11</td><td>sh.600741</td><td>华域汽车</td><td>2022-12-31</td><td class="num">38.52%</td></tr>
-<tr><td class="num">21</td><td>sh.600694</td><td>大商股份</td><td>2025-12-31</td><td class="num">70.19%</td></tr>
-<tr><td class="num">21</td><td>sh.600694</td><td>大商股份</td><td>2024-12-31</td><td class="num">53.93%</td></tr>
-<tr><td class="num">21</td><td>sh.600694</td><td>大商股份</td><td>2023-12-31</td><td class="num">56.34%</td></tr>
-<tr><td class="num">21</td><td>sh.600694</td><td>大商股份</td><td>2022-12-31</td><td class="num">25.91%</td></tr>
-<tr><td class="num">22</td><td>sh.601717</td><td>中创智领</td><td>2025-12-31</td><td class="num">51.98%</td></tr>
-<tr><td class="num">22</td><td>sh.601717</td><td>中创智领</td><td>2024-12-31</td><td class="num">50.83%</td></tr>
-<tr><td class="num">22</td><td>sh.601717</td><td>中创智领</td><td>2023-12-31</td><td class="num">45.81%</td></tr>
-<tr><td class="num">22</td><td>sh.601717</td><td>中创智领</td><td>2022-12-31</td><td class="num">39.32%</td></tr>
-<tr><td class="num">25</td><td>sh.600282</td><td>南钢股份</td><td>2025-12-31</td><td class="num">55.00%</td></tr>
-<tr><td class="num">25</td><td>sh.600282</td><td>南钢股份</td><td>2024-12-31</td><td class="num">50.45%</td></tr>
-<tr><td class="num">25</td><td>sh.600282</td><td>南钢股份</td><td>2023-12-31</td><td class="num">72.52%</td></tr>
-<tr><td class="num">25</td><td>sh.600282</td><td>南钢股份</td><td>2022-12-31</td><td class="num">71.31%</td></tr>
-<tr><td class="num">29</td><td>sh.600861</td><td>北京人力</td><td>2025-12-31</td><td class="num">50.00%</td></tr>
-<tr><td class="num">29</td><td>sh.600861</td><td>北京人力</td><td>2024-12-31</td><td class="num">50.00%</td></tr>
-<tr><td class="num">29</td><td>sh.600861</td><td>北京人力</td><td>2023-12-31</td><td class="num">50.00%</td></tr>
-<tr><td class="num">29</td><td>sh.600861</td><td>北京人力</td><td>2022-12-31</td><td class="num">0.00%</td></tr>
-<tr><td class="num">30</td><td>sh.601919</td><td>中远海控</td><td>2025-12-31</td><td class="num">49.86%</td></tr>
-<tr><td class="num">30</td><td>sh.601919</td><td>中远海控</td><td>2024-12-31</td><td class="num">49.40%</td></tr>
-<tr><td class="num">30</td><td>sh.601919</td><td>中远海控</td><td>2023-12-31</td><td class="num">49.74%</td></tr>
-<tr><td class="num">30</td><td>sh.601919</td><td>中远海控</td><td>2022-12-31</td><td class="num">49.98%</td></tr>
-<tr><td class="num">33</td><td>sz.002772</td><td>众兴菌业</td><td>2025-12-31</td><td class="num">50.34%</td></tr>
-<tr><td class="num">33</td><td>sz.002772</td><td>众兴菌业</td><td>2024-12-31</td><td class="num">87.81%</td></tr>
-<tr><td class="num">33</td><td>sz.002772</td><td>众兴菌业</td><td>2023-12-31</td><td class="num">73.93%</td></tr>
-<tr><td class="num">33</td><td>sz.002772</td><td>众兴菌业</td><td>2022-12-31</td><td class="num">74.44%</td></tr>
-<tr><td class="num">34</td><td>sz.000685</td><td>中山公用</td><td>2025-12-31</td><td class="num">30.07%</td></tr>
-<tr><td class="num">34</td><td>sz.000685</td><td>中山公用</td><td>2024-12-31</td><td class="num">52.89%</td></tr>
-<tr><td class="num">34</td><td>sz.000685</td><td>中山公用</td><td>2023-12-31</td><td class="num">30.37%</td></tr>
-<tr><td class="num">34</td><td>sz.000685</td><td>中山公用</td><td>2022-12-31</td><td class="num">30.11%</td></tr>
-<tr><td class="num">35</td><td>sh.601186</td><td>中国铁建</td><td>2025-12-31</td><td class="num">22.19%</td></tr>
-<tr><td class="num">35</td><td>sh.601186</td><td>中国铁建</td><td>2024-12-31</td><td class="num">18.34%</td></tr>
-<tr><td class="num">35</td><td>sh.601186</td><td>中国铁建</td><td>2023-12-31</td><td class="num">18.21%</td></tr>
-<tr><td class="num">35</td><td>sh.601186</td><td>中国铁建</td><td>2022-12-31</td><td class="num">14.25%</td></tr>
-<tr><td class="num">36</td><td>sz.000157</td><td>中联重科</td><td>2025-12-31</td><td class="num">71.20%</td></tr>
-<tr><td class="num">36</td><td>sz.000157</td><td>中联重科</td><td>2024-12-31</td><td class="num">73.70%</td></tr>
-<tr><td class="num">36</td><td>sz.000157</td><td>中联重科</td><td>2023-12-31</td><td class="num">79.21%</td></tr>
-<tr><td class="num">36</td><td>sz.000157</td><td>中联重科</td><td>2022-12-31</td><td class="num">114.54%</td></tr>
-<tr><td class="num">39</td><td>sh.600704</td><td>物产中大</td><td>2025-12-31</td><td class="num">31.23%</td></tr>
-<tr><td class="num">39</td><td>sh.600704</td><td>物产中大</td><td>2024-12-31</td><td class="num">35.27%</td></tr>
-<tr><td class="num">39</td><td>sh.600704</td><td>物产中大</td><td>2023-12-31</td><td class="num">30.15%</td></tr>
-<tr><td class="num">39</td><td>sh.600704</td><td>物产中大</td><td>2022-12-31</td><td class="num">19.85%</td></tr>
-<tr><td class="num">40</td><td>sh.600987</td><td>航民股份</td><td>2025-12-31</td><td class="num">48.62%</td></tr>
-<tr><td class="num">40</td><td>sh.600987</td><td>航民股份</td><td>2024-12-31</td><td class="num">42.55%</td></tr>
-<tr><td class="num">40</td><td>sh.600987</td><td>航民股份</td><td>2023-12-31</td><td class="num">46.01%</td></tr>
-<tr><td class="num">40</td><td>sh.600987</td><td>航民股份</td><td>2022-12-31</td><td class="num">47.91%</td></tr>
-<tr><td class="num">41</td><td>sh.601318</td><td>中国平安</td><td>2025-12-31</td><td class="num">36.27%</td></tr>
-<tr><td class="num">41</td><td>sh.601318</td><td>中国平安</td><td>2024-12-31</td><td class="num">36.68%</td></tr>
-<tr><td class="num">41</td><td>sh.601318</td><td>中国平安</td><td>2023-12-31</td><td class="num">51.66%</td></tr>
-<tr><td class="num">41</td><td>sh.601318</td><td>中国平安</td><td>2022-12-31</td><td class="num">39.85%</td></tr>
+<tr><td class="num">1</td><td>sh.600502</td><td>安徽建工</td><td>2022:31.1 2023:28.7 2024:34.5 2025:30.4</td><td class="num">31.17%</td><td class="num">4</td></tr>
+<tr><td class="num">2</td><td>sh.601229</td><td>上海银行</td><td>2022:25.5 2023:29.0 2024:30.2 2025:30.5</td><td class="num">28.80%</td><td class="num">4</td></tr>
+<tr><td class="num">3</td><td>sh.600015</td><td>华夏银行</td><td>2022:24.3 2023:23.2 2024:23.3 2025:24.6</td><td class="num">23.85%</td><td class="num">4</td></tr>
+<tr><td class="num">4</td><td>sh.601166</td><td>兴业银行</td><td>2022:27.0 2023:28.0 2024:29.1 2025:29.1</td><td class="num">28.30%</td><td class="num">4</td></tr>
+<tr><td class="num">7</td><td>sh.600894</td><td>广日股份</td><td>2022:30.2 2023:61.0 2024:143.6 2025:61.8</td><td class="num">74.13%</td><td class="num">4</td></tr>
+<tr><td class="num">8</td><td>sz.002582</td><td>好想你</td><td>2022:-23.4* 2023:-510.7* 2024:-849.6* 2025:30.6</td><td class="num">30.56%</td><td class="num">1</td></tr>
+<tr><td class="num">9</td><td>sh.601668</td><td>中国建筑</td><td>2022:20.8 2023:20.8 2024:24.3 2025:28.7</td><td class="num">23.66%</td><td class="num">4</td></tr>
+<tr><td class="num">11</td><td>sh.600741</td><td>华域汽车</td><td>2022:38.5 2023:32.8 2024:37.6 2025:43.7</td><td class="num">38.17%</td><td class="num">4</td></tr>
+<tr><td class="num">21</td><td>sh.600694</td><td>大商股份</td><td>2022:25.9 2023:56.3 2024:53.9 2025:70.2</td><td class="num">51.59%</td><td class="num">4</td></tr>
+<tr><td class="num">22</td><td>sh.601717</td><td>中创智领</td><td>2022:39.3 2023:45.8 2024:50.8 2025:52.0</td><td class="num">46.99%</td><td class="num">4</td></tr>
+<tr><td class="num">25</td><td>sh.600282</td><td>南钢股份</td><td>2022:71.3 2023:72.5 2024:50.4 2025:55.0</td><td class="num">62.32%</td><td class="num">4</td></tr>
+<tr><td class="num">29</td><td>sh.600861</td><td>北京人力</td><td>2022:0.0* 2023:50.0 2024:50.0 2025:50.0</td><td class="num">50.00%</td><td class="num">3</td></tr>
+<tr><td class="num">30</td><td>sh.601919</td><td>中远海控</td><td>2022:50.0 2023:49.7 2024:49.4 2025:49.9</td><td class="num">49.74%</td><td class="num">4</td></tr>
+<tr><td class="num">33</td><td>sz.002772</td><td>众兴菌业</td><td>2022:74.4 2023:73.9 2024:87.8 2025:50.3</td><td class="num">71.63%</td><td class="num">4</td></tr>
+<tr><td class="num">34</td><td>sz.000685</td><td>中山公用</td><td>2022:30.1 2023:30.4 2024:52.9 2025:30.1</td><td class="num">35.86%</td><td class="num">4</td></tr>
+<tr><td class="num">35</td><td>sh.601186</td><td>中国铁建</td><td>2022:14.3 2023:18.2 2024:18.3 2025:22.2</td><td class="num">18.25%</td><td class="num">4</td></tr>
+<tr><td class="num">36</td><td>sz.000157</td><td>中联重科</td><td>2022:114.5 2023:79.2 2024:73.7 2025:71.2</td><td class="num">84.66%</td><td class="num">4</td></tr>
+<tr><td class="num">39</td><td>sh.600704</td><td>物产中大</td><td>2022:19.8 2023:30.1 2024:35.3 2025:31.2</td><td class="num">29.12%</td><td class="num">4</td></tr>
+<tr><td class="num">40</td><td>sh.600987</td><td>航民股份</td><td>2022:47.9 2023:46.0 2024:42.6 2025:48.6</td><td class="num">46.27%</td><td class="num">4</td></tr>
+<tr><td class="num">41</td><td>sh.601318</td><td>中国平安</td><td>2022:39.9 2023:51.7 2024:36.7 2025:36.3</td><td class="num">41.11%</td><td class="num">4</td></tr>
 </tbody></table></div>
 </section>
 <section id="detail_roe">
@@ -590,7 +530,7 @@ footer{margin-top:48px;border-top:1px solid var(--border);padding-top:12px;color
 <div><dt>--no-warnings</dt><dd>否</dd></div>
 </dl>
 </section>
-<footer>本报告由 calculate_three_dimension_rank_with_params_copy.py 生成 · 生成时间 2026-11-08 12:09:11</footer>
+<footer>本报告由 calculate_three_dimension_rank_with_params_copy.py 生成 · 生成时间 2026-11-08 12:12:05</footer>
 </div>
 </body>
 </html>
